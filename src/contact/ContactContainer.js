@@ -48,7 +48,7 @@ class Contact extends Component {
   handleSubmit = values => {
     let data = encode({
       'form-name': 'contact',
-      values
+      ...values
     });
 
     axios
