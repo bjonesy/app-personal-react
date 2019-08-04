@@ -8,6 +8,7 @@ import Container from '@material-ui/core/Container';
 import Header from '../core/components/HeaderComponent';
 import PageHeader from '../shared/components/PageHeaderComponent';
 import ContactForm from './components/ContactFormComponent';
+import SubmissionSuccess from './components/SubmissionSuccessComponent';
 
 const propTypes = {
   classes: PropTypes.shape({
@@ -70,6 +71,23 @@ class Contact extends Component {
   render() {
     const { classes } = this.props;
     const values = { firstName: '', lastName: '', email: '', message: '' };
+    const formSubmitted = this.state.formSubmission;
+    let form;
+
+    if (formSubmitted) {
+      form = <SubmissionSuccess />;
+    } else {
+      form = (
+        <Formik
+          onSubmit={values => {
+            this.handleSubmit(values);
+          }}
+          render={props => <ContactForm {...props} />}
+          initialValues={values}
+          validationSchema={validationSchema}
+        />
+      );
+    }
 
     return (
       <React.Fragment>
@@ -79,16 +97,7 @@ class Contact extends Component {
             <Container maxWidth="lg">
               <PageHeader title="Contact" />
             </Container>
-            <Container maxWidth="lg">
-              <Formik
-                onSubmit={values => {
-                  this.handleSubmit(values);
-                }}
-                render={props => <ContactForm {...props} />}
-                initialValues={values}
-                validationSchema={validationSchema}
-              />
-            </Container>
+            <Container maxWidth="lg">{form}</Container>
           </article>
         </main>
       </React.Fragment>
