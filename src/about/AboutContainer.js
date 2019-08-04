@@ -50,7 +50,7 @@ class About extends Component {
   }
 
   async fetchData() {
-    return axios.get('http://localhost:3000/data/data.json');
+    return axios.get('data/data.json');
   }
 
   render() {
