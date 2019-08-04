@@ -79,6 +79,12 @@ class Contact extends Component {
             <Container maxWidth="lg">
               <PageHeader title="Contact" />
             </Container>
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="firstName" />
+              <input type="text" name="lastName" />
+              <input type="email" name="email" />
+              <textarea name="message" />
+            </form>
             <Container maxWidth="lg">
               <Formik
                 onSubmit={values => {
