@@ -1,0 +1,54 @@
+{
+  "home": {
+    "name": "Brandon Jones",
+    "role": "Front-End Software Engineer, BetterCloud",
+    "quote": "I have a passion for solving problems and am self-motivated to continuously learn and develop new skills"
+  },
+  "about": {
+    "content": "I have over 7+ years of professional experience in web and software development, primarily focused on front-end and UI engineering with more recent experience in full-stack development.",
+    "experience": {
+      "header": "Work Experience",
+      "jobs": [
+        {
+          "id": 1,
+          "companyName": "BetterCloud",
+          "duration": "August 9th - Present",
+          "summary": "BetterCloud is the first unified SaaS management platform, empowering organizations to securely adopt and manage best-in-breed SaaS applications. Every day, thousands of customers rely on BetterCloud to centralize SaaS management, automate workflows and compliance policies, and surface relevant insights across SaaS applications. BetterCloud is headquartered in New York City with engineering offices in Atlanta, GA.",
+          "responsibilities": ["React, Redux, Java"]
+        },
+        {
+          "id": 2,
+          "companyName": "Blue Sombrero | A Dick's Sporting Goods Company",
+          "duration": "December 2017 - August 2019",
+          "summary": "At Blue Sombrero, I was apart of a development team that was responsible for rebuilding an online registration and club management system for youth sports. I helped create reusable components, libraries and microservices for front-end architecture. This also included back-end work and contributing to building the API services. Other responsibilities included maintaining component libraries, keeping consistency in the UI, facilitating communication between developers and the UX team, and mentoring junior team members on front-end best practices. My team operated in an Agile environment, running standard 2-week sprints.",
+          "responsibilities": [
+            "Acted as the formal checkpoint in JIRA for all front-end work completed by all developers each sprint",
+            "Led Angular upgrade from versions 2 to 5 and 5 to 6",
+            "Built component library that was shared across multiple development teams, driving code consistency and promoting engineering efficiency",
+            "Designed and created the company’s first Style Guide, built as an interactive Angular app.  Partnered with and trained other developers and UX team on how to use the Style Guide to keep branding and UI elements consistent across various aspects of the product",
+            "Initiated daily meetings between developers, UX team, and project managers to open lines of communication and collaborate on addressing and removing road blocks",
+            "Completed 3-day C# training course, increasing my knowledge and skill level on back-end development"
+          ]
+        },
+        {
+          "id": 3,
+          "companyName": "Cox Media Group | Fans 1st LLC",
+          "duration": "February 2014 - November 2017",
+          "summary": "At Cox Media Group, I worked with a team of developers and partnered with designers and product managers to create and deploy new technology features for multiple brand websites and applications. This included facilitating new brand full website launches, new brand technology feature launches, code commit checking, testing and pushing updates to GitHub, daily team stand ups, project scopes from start to finish including timelines and process maps. This also included working with 3rd party vendors to implement software for data tracking and brand analytics.",
+          "responsibilities": [
+            "Built a video wrapper API using Node.js, Express, Babel, ES6, React and Webpack. This API ties into different 3rd party APIs such as Facebook, YouTube, Rumble and Anvato for tracking video data. The wrapper is used to track video analytic data across all Fans 1st Media brand sites and is also starting to be used across all of CMG. It tracks user interactions with the video player, video watching percentage and 3rd party API functions that are used to help track video data.",
+            "Using PHP, JavaScript, and Gulp, I built and managed the technical migration of the Rare Country brand vertical to its own unique website, RareCountry.com. Originally a segment of Rare.us, Rare Country’s popularity and success warranted the creation of its own dedicated site.  In addition to building the new site, I also supported the content migration efforts.  During this migration, I successfully accommodated late-stage requirement changes from the primary ad sponsor, including a full-page ad and two banner ads across the new site homepage and article page.  I was able to set these ads up quickly using JavaScript, PHP and CSS to help meet the short deadline. (June 2017)",
+            "Learned Python, with no prior experience, to help build out a data dashboard of Google analytics data for sessions and page view per sessions.  This involved tapping into 5 different brand websites to access the Google analytics data from the Google Analytics API, storing this data into multiple Mongo databases and then using Jinja 2 to display the data in a dashboard format. (December 2016)",
+            "Worked overtime with the design team to help implement brand design architecture and led development for the first all-digital awards experience to honor 2016’s best-in-country music.  Using JavaScript and browser cookies, I created a voting polling system that was used to track votes for multiple musicians in multiple categories over a four-week period. To accommodate a smooth voting experience, a series of JavaScript modals would allow users to seamlessly vote multiple times and share each vote to a variety of different social channels without a page load.  These results were tallied together to award country music artists, such as Blake Shelton, their perspective awards per category. (2016)",
+            "Took over the development from a 3rd party vendor and was the sole developer for 2+ years.  Once the site achieved major success, additional developers and supporting team was built up",
+            "Helped Rare.us go from hundreds of page views, to thousands, and then to over 100,000 unique visits per day",
+            "Led multiple initiatives to decrease page load times by removing legacy PHP, JavaScript and CSS",
+            "Helped gather data and analytics from Google analytics A/B testing",
+            "Used PHP and JavaScript to build back-end admin UI components, like an easy drag and drop list of authors to attach or remove from an article",
+            "Used PHP, JavaScript and HTML5 to build many front-end features like content sliders, infinite scrolling, sharing widgets, and subscribe forms"
+          ]
+        }
+      ]
+    }
+  }
+}

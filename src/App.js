@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { makeStyles } from '@material-ui/core/styles';
+import Home from './home/HomeContainer';
+import About from './about/AboutContainer';
+import Contact from './contact/ContactContainer';
+import Footer from './core/components/FooterComponent';
 
-function App() {
+const useStyles = makeStyles(() => ({
+  root: {
+    background: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
+  }
+}));
+
+const propTypes = {
+  classes: PropTypes.shape({
+    root: PropTypes.string
+  })
+};
+
+const App = () => {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={classes.root}>
+        <CssBaseline />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
+
+App.propTypes = propTypes;
 
 export default App;
