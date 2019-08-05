@@ -7,6 +7,7 @@ import Home from './home/HomeContainer';
 import About from './about/AboutContainer';
 import Contact from './contact/ContactContainer';
 import Footer from './core/components/FooterComponent';
+import Page404 from './shared/components/Page404Component';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -34,6 +35,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route component={Page404} />
         </Switch>
         <Footer />
       </div>
