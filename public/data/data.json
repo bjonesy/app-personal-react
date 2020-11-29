@@ -13,8 +13,13 @@
           "id": 1,
           "companyName": "BetterCloud",
           "duration": "August 9th - Present",
-          "summary": "BetterCloud is the first unified SaaS management platform, empowering organizations to securely adopt and manage best-in-breed SaaS applications. Every day, thousands of customers rely on BetterCloud to centralize SaaS management, automate workflows and compliance policies, and surface relevant insights across SaaS applications. BetterCloud is headquartered in New York City with engineering offices in Atlanta, GA.",
-          "responsibilities": ["React, Redux, Java"]
+          "summary": "I currently work on a large Sass Application Management and Security Platform. I have worked on multiple parts of the application which span from the UI, multiple back-end micro services, internal application systems used for tooling and the internal application support team. From this work I have gained lots of experience with transitioning roles and being apart of multiple development teams. I have also gained a lot of experience working with 3rd party APIs and how to integrate them into different technology stacks.",
+          "responsibilities": [
+            "Lead React front-end development for adding OneLogin native integration. This included technical planning and working with product on a deliverable timeline. Was the first successful conversion of a custom integration to a native integration. This process was documented and adopted by other teams that were responsible for developing other integrations.",
+            "Lead React front-end development for adding Dropbox as an IDP for registration and login. Also played a pivotal role in updating the Spring back-end services. This included technical planning and execution of front-end work, adding new Auth0 social connections and updating multiple core micro Spring services.",
+            "Worked on the internal application support team which was more of a site reliability engineering (SRE) role. Main day to day duties were spent working on high / medium priority bug tickets. This included being on a 24hr rotational call schedule to monitor and troubleshoot Kafka or Database alerts in Grafana and Google Operations. This work spanned across multiple Spring microservices throughout the whole application system.",
+            "Certified in giving engineering reviews for internal and customer integration submissions. Before adding new integrations into the application there is a strict review process that each one goes through. One of these steps is a engineering review. I was part of a small group of allowed engineers that could conduct these reviews and give sign offs for approval."
+          ]
         },
         {
           "id": 2,
